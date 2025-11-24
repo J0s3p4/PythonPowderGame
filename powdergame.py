@@ -22,8 +22,10 @@ while running:
     
     if pygame.mouse.get_pressed()[0]:
         mx, my = pygame.mouse.get_pos()
-        gx, gy = mx // CELL_SIZE, my // CELL_SIZE
-        grid[gy, gx] = 1
+        gx = mx // CELL_SIZE
+        gy =  my // CELL_SIZE
+        if 0 <= gx < GRID_WIDTH and 0 <= gy < GRID_HEIGHT:
+            grid[gy, gx] = 1
 
     
     # Update grid (simple falling sand rule)
