@@ -42,5 +42,5 @@ while running:
             if grid[y, x] == 1:
                 pygame.draw.rect(screen, (194, 178, 128), (x*CELL_SIZE, y*CELL_SIZE, CELL_SIZE, CELL_SIZE))
 
-    pygame.display.flip()
+    pygame.display.flip()e
     clock.tick(60)
