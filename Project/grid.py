@@ -5,9 +5,9 @@
 #
 
 import numpy as np
-from config import GRID_WIDTH, GRID_HEIGHT, SAND
-from materials import update_sand
-from config import EMPTY
+from config import GRID_WIDTH, GRID_HEIGHT, SAND, WATER, EMPTY
+from materials import update_sand, update_water
+
 
 class Grid:
     def __init__(self):
@@ -25,3 +25,6 @@ class Grid:
 
                 if cell == SAND:
                     update_sand(self.data, x, y)
+
+                elif cell == WATER:
+                    update_water(self.data, x, y)
