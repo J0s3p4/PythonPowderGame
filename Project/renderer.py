@@ -5,12 +5,12 @@
 #
 
 import pygame
-from config import CELL_SIZE, SAND, STONE, WATER
+from config import CELL_SIZE, SAND, STONE, WATER, EMPTY
 
 SAND_COLOR = (194, 178, 128)
 STONE_COLOR = (120, 120, 120)
 WATER_COLOR = (64, 164, 223)   # light blue
-
+EMPTY_COLOR = (0,0,0)
 
 def draw_grid(screen, grid):
     screen.fill((0, 0, 0))
@@ -25,3 +25,5 @@ def draw_grid(screen, grid):
                 pygame.draw.rect(screen, STONE_COLOR, (x*CELL_SIZE, y*CELL_SIZE, CELL_SIZE, CELL_SIZE))
             elif cell == WATER:
                 pygame.draw.rect(screen, WATER_COLOR, (x*CELL_SIZE, y*CELL_SIZE, CELL_SIZE, CELL_SIZE))
+            elif cell == EMPTY:
+                pygame.draw.rect(screen, EMPTY_COLOR, (x*CELL_SIZE, y*CELL_SIZE, CELL_SIZE, CELL_SIZE))

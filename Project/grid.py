@@ -5,7 +5,7 @@
 #
 
 import numpy as np
-from config import GRID_WIDTH, GRID_HEIGHT, SAND, WATER, EMPTY
+from config import GRID_WIDTH, GRID_HEIGHT, SAND, WATER
 from materials import update_sand, update_water
 
 

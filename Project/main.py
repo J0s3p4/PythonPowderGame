@@ -1,7 +1,7 @@
 # main.py
 
 import pygame
-from config import WIDTH, HEIGHT, SAND, STONE, WATER
+from config import WIDTH, HEIGHT, SAND, STONE, WATER, EMPTY
 from grid import Grid
 from renderer import draw_grid
 
@@ -29,6 +29,8 @@ def main():
                     current_material = STONE
                 elif event.key == pygame.K_3:
                     current_material = WATER
+                elif event.key == pygame.K_0:
+                    current_material = EMPTY
 
         # left click to place
         if pygame.mouse.get_pressed()[0]:
