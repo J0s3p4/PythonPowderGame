@@ -1,9 +1,9 @@
-# PythonPowderGame V1
+# PythonPowderGame
 
-**1** - Sand
-**2** - Stone
-**3** - Water
-**0** - Empty
+1 - Sand
+2 - Stone
+3 - Water
+0 - Empty
 
 ## Adding a new material
 - Define a constant in config.py, e.g "SAND = 1"
